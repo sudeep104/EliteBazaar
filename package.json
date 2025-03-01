@@ -1,0 +1,15 @@
+{
+  "name": "elitebazaar",
+  "version": "1.0.0",
+  "description": "eCommerce application built with the MERN stack",
+  "type": "module",
+  "main": "server.js",
+  "scripts": {
+    "start": "node backend/server.js"
+  },
+  "author": "Sudeep Nagda",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.21.2"
+  }
+}
