@@ -29,8 +29,9 @@ const CrtScreen = () => {
   };
 
   const checkoutHandler = () => {
-    navigate("/login?redirect=/shipping");
-  }
+    // navigate('/login?redirect=/shipping');
+    navigate('/shipping');
+  };
 
   return (
     <Row>
@@ -94,8 +95,8 @@ const CrtScreen = () => {
             </ListGroup.Item>
             <ListGroup.Item>
                 <Button
-                  type="button"
-                  className="btn-block"
+                  type='button'
+                  className='btn-block'
                   disabled={cartItems.length === 0}
                   onClick={checkoutHandler}
                   >
