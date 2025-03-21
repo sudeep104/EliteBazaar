@@ -35,7 +35,7 @@ if (orderItems && orderItems.length === 0) {
         totalPrice,
     });
 
-    const createdOrder = await Order.save();
+    const createdOrder = await order.save();
 
     res.status(201).json(createdOrder);
 }
