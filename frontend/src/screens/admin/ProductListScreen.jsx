@@ -1,7 +1,7 @@
 import React from "react";
 import { LinkContainer } from "react-router-bootstrap";
 import { Table, Button, Row, Col } from "react-bootstrap";
-import { FaTimes, FaEdit, FaTrash } from "react-icons/fa";
+import { FaEdit, FaTrash } from "react-icons/fa";
 import Message from "../../components/Message";
 import Loader from "../../components/Loader";
 import { toast } from "react-toastify";
@@ -67,7 +67,7 @@ const ProductListScreen = () => {
                 <tr key={product._id}>
                   <td>{product._id}</td>
                   <td>{product.name}</td>
-                  <td>{product.price}</td>
+                  <td>${product.price}</td>
                   <td>{product.category}</td>
                   <td>{product.brand}</td>
                   <td>
