@@ -16,6 +16,7 @@ import { toast } from "react-toastify";
 import Rating from "../components/Rating";
 import Loader from "../components/Loader";
 import Message from "../components/Message";
+import Meta from "../components/Meta";
 import {
   useGetProductDetailsQuery,
   useCreateReviewMutation,
@@ -65,7 +66,7 @@ const ProductScreen = () => {
     } catch (err) {
       toast.error(err?.data?.message || err.error);
     }
-  }
+  };
 
   return (
     <>
@@ -81,6 +82,7 @@ const ProductScreen = () => {
         </Message>
       ) : (
         <>
+          <Meta title={product.name} description={product.description} />
           <Row>
             <Col md={5}>
               <Image src={product.image} alt={product.name} fluid />
@@ -180,7 +182,7 @@ const ProductScreen = () => {
                   {loadingProductReview && <Loader />}
 
                   {userInfo ? (
-                    <Form onSubmit={ submitHandler }>
+                    <Form onSubmit={submitHandler}>
                       <Form.Group controlId="rating" className="my-2">
                         <Form.Label>Rating</Form.Label>
                         <Form.Control
