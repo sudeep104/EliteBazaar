@@ -16,7 +16,7 @@ async function getPayPalAccessToken() {
     'base64'
   );
 
-  const url = `${PAYPAL_API_URL}/v1/auth/token`;
+  const url = `${PAYPAL_API_URL}/v1/oauth2/token`;
 
   const headers = {
     Accept: 'application/json',
