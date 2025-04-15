@@ -1,5 +1,5 @@
 export const BASE_URL =
-  process.env.NODE_ENV === "development" ? "http://localhost:5000" : "";
+  process.env.NODE_ENV === "productiont" ? "http://localhost:5000" : "";
 // export const BASE_URL = '';
 export const PRODUCTS_URL = '/api/products';
 export const USERS_URL = '/api/users';
