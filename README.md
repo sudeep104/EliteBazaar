@@ -1,7 +1,7 @@
 # 🛍️ EliteBazaar
 
 **EliteBazaar** is a full-featured eCommerce application built with the MERN stack (MongoDB, Express, React, Node.js). It includes a shopping cart, user authentication, product management, and secure payments via PayPal.
-<img src="./frontend/public/images/screens.png">
+<img src="[./frontend/public/images/screens.png](https://github.com/user-attachments/assets/7a82b174-2b14-428b-afbe-f0f403cc6a07)">
 ---
 
 ## 🚀 Features
